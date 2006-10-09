@@ -1,15 +1,16 @@
 Summary:	Streaming library for IEEE1394
 Summary(pl):	Biblioteka strumieni dla IEEE1394
 Name:		libiec61883
-Version:	1.0.0
+Version:	1.1.0
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/libraw1394/%{name}-%{version}.tar.gz
-# Source0-md5:	7f531c1599bfe8f385a2cb4e56e9d93b
+Source0:	http://www.linux1394.org/dl/%{name}-%{version}.tar.gz
+# Source0-md5:	08f46840912ae2032499186228842a32
 URL:		http://www.linux1394.org/
-BuildRequires:	libraw1394-devel >= 1.2.0
-Requires:	libraw1394 >= 1.2.0
+BuildRequires:	libraw1394-devel >= 1.2.1
+BuildRequires:	pkgconfig
+Requires:	libraw1394 >= 1.2.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,7 +51,7 @@ Summary:	libiec61883 header files
 Summary(pl):	Pliki nag³ówkowe biblioteki libiec61883
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	libraw1394-devel >= 1.2.0
+Requires:	libraw1394-devel >= 1.2.1
 
 %description devel
 libiec61883 devel package.
@@ -92,8 +93,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/plug*
 %attr(755,root,root) %{_libdir}/libiec61883.so.*.*
+%{_mandir}/man1/plug*.1*
 
 %files devel
 %defattr(644,root,root,755)
