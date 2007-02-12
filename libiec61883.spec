@@ -1,5 +1,5 @@
 Summary:	Streaming library for IEEE1394
-Summary(pl):	Biblioteka strumieni dla IEEE1394
+Summary(pl.UTF-8):   Biblioteka strumieni dla IEEE1394
 Name:		libiec61883
 Version:	1.1.0
 Release:	1
@@ -29,26 +29,26 @@ kernel modules, /dev nodes, and procfs. It also consolidates features
 for plug control registers and connection management that previously
 existed in experimental form in an unreleased version of libavc1394.
 
-%description -l pl
-Ta biblioteka jest implementacj± czÍ∂ci 1 (CIP, rejestry ≥±cz, CMP),
-czÍ∂ci 2 (DV-SD), czÍ∂ci 4 (MPEG2-TS) oraz czÍ∂ci 6 (AMDTP) standardu
-IEC 61883. Poza IIDC prawie wszystkie urz±dzenia multimedialne
-FireWire uøywaj± protoko≥Ûw IEC 61883.
+%description -l pl.UTF-8
+Ta biblioteka jest implementacjƒÖ czƒô≈õci 1 (CIP, rejestry ≈ÇƒÖcz, CMP),
+czƒô≈õci 2 (DV-SD), czƒô≈õci 4 (MPEG2-TS) oraz czƒô≈õci 6 (AMDTP) standardu
+IEC 61883. Poza IIDC prawie wszystkie urzƒÖdzenia multimedialne
+FireWire u≈ºywajƒÖ protoko≈Ç√≥w IEC 61883.
 
-Biblioteka libiec61883 udostÍpnia wysokopoziomowe API do przekazywania
-strumieni DV, MPEG-2 i dºwiÍku po linuksowym IEEE 1394. Obejmuje to
-zarÛwno przyjmowanie jak i przesy≥anie. Uøywa nowego API "rawiso" z
-libraw1394, ktÛre w sposÛb przezroczysty udostÍpnia mmapowane DMA do
-wydajnego przesy≥ania danych. Biblioteka reprezentuje takøe trzeci±
-generacjÍ technologii wej∂cia/wyj∂cia dla projektu Linux 1394 dla tych
-rodzajÛw no∂nikÛw usuwaj±c z≥oøono∂Ê dodatkowych modu≥Ûw j±dra, wÍz≥Ûw
-/dev oraz procfs. £±czy moøliwo∂ci rejestrÛw sterowania ≥±czami i
-zarz±dzania po≥±czeniami, ktÛre wcze∂niej istnia≥y w postaci
+Biblioteka libiec61883 udostƒôpnia wysokopoziomowe API do przekazywania
+strumieni DV, MPEG-2 i d≈∫wiƒôku po linuksowym IEEE 1394. Obejmuje to
+zar√≥wno przyjmowanie jak i przesy≈Çanie. U≈ºywa nowego API "rawiso" z
+libraw1394, kt√≥re w spos√≥b przezroczysty udostƒôpnia mmapowane DMA do
+wydajnego przesy≈Çania danych. Biblioteka reprezentuje tak≈ºe trzeciƒÖ
+generacjƒô technologii wej≈õcia/wyj≈õcia dla projektu Linux 1394 dla tych
+rodzaj√≥w no≈õnik√≥w usuwajƒÖc z≈Ço≈ºono≈õƒá dodatkowych modu≈Ç√≥w jƒÖdra, wƒôz≈Ç√≥w
+/dev oraz procfs. ≈ÅƒÖczy mo≈ºliwo≈õci rejestr√≥w sterowania ≈ÇƒÖczami i
+zarzƒÖdzania po≈ÇƒÖczeniami, kt√≥re wcze≈õniej istnia≈Çy w postaci
 eksperymentalnej w niewydanej wersji libavc1394.
 
 %package devel
 Summary:	libiec61883 header files
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki libiec61883
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki libiec61883
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libraw1394-devel >= 1.2.1
@@ -56,19 +56,19 @@ Requires:	libraw1394-devel >= 1.2.1
 %description devel
 libiec61883 devel package.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki libiec61883.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki libiec61883.
 
 %package static
 Summary:	libiec61883 static library
-Summary(pl):	Statyczna biblioteka do obs≥ugi formatu IEEE-1394
+Summary(pl.UTF-8):   Statyczna biblioteka do obs≈Çugi formatu IEEE-1394
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 libiec61883 static librawy.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libiec61883.
 
 %prep
