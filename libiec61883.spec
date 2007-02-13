@@ -1,5 +1,5 @@
 Summary:	Streaming library for IEEE1394
-Summary(pl.UTF-8):   Biblioteka strumieni dla IEEE1394
+Summary(pl.UTF-8):	Biblioteka strumieni dla IEEE1394
 Name:		libiec61883
 Version:	1.1.0
 Release:	1
@@ -48,7 +48,7 @@ eksperymentalnej w niewydanej wersji libavc1394.
 
 %package devel
 Summary:	libiec61883 header files
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libiec61883
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libiec61883
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libraw1394-devel >= 1.2.1
@@ -61,7 +61,7 @@ Pliki nagłówkowe biblioteki libiec61883.
 
 %package static
 Summary:	libiec61883 static library
-Summary(pl.UTF-8):   Statyczna biblioteka do obsługi formatu IEEE-1394
+Summary(pl.UTF-8):	Statyczna biblioteka do obsługi formatu IEEE-1394
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
