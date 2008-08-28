@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Biblioteka strumieni dla IEEE1394
 Name:		libiec61883
 Version:	1.1.0
 Release:	3
-License:	LGPL
+License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://www.linux1394.org/dl/%{name}-%{version}.tar.gz
 # Source0-md5:	08f46840912ae2032499186228842a32
@@ -94,7 +94,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/plug*
-%attr(755,root,root) %{_libdir}/libiec61883.so.*.*
+%attr(755,root,root) %{_libdir}/libiec61883.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libiec61883.so.0
 %{_mandir}/man1/plug*.1*
 
 %files devel
