@@ -5,9 +5,9 @@ Version:	1.2.0
 Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://www.linux1394.org/dl/%{name}-%{version}.tar.gz
+Source0:	https://www.kernel.org/pub/linux/libs/ieee1394/%{name}-%{version}.tar.gz
 # Source0-md5:	8af39fff74988073c3ad53fbab147da9
-URL:		http://www.linux1394.org/
+URL:		https://ieee1394.wiki.kernel.org/index.php/Libraries#libiec61883
 BuildRequires:	libraw1394-devel >= 1.2.1
 BuildRequires:	pkgconfig
 Requires:	libraw1394 >= 1.2.1
