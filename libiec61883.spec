@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	https://www.kernel.org/pub/linux/libs/ieee1394/%{name}-%{version}.tar.gz
 # Source0-md5:	8af39fff74988073c3ad53fbab147da9
 URL:		https://ieee1394.wiki.kernel.org/index.php/Libraries#libiec61883
+BuildRequires:	automake
 BuildRequires:	libraw1394-devel >= 1.2.1
 BuildRequires:	pkgconfig
 Requires:	libraw1394 >= 1.2.1
@@ -75,6 +76,7 @@ Statyczna biblioteka libiec61883.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
