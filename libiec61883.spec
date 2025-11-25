@@ -2,7 +2,7 @@ Summary:	Streaming library for IEEE1394
 Summary(pl.UTF-8):	Biblioteka strumieni dla IEEE1394
 Name:		libiec61883
 Version:	1.2.0
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://www.kernel.org/pub/linux/libs/ieee1394/%{name}-%{version}.tar.gz
